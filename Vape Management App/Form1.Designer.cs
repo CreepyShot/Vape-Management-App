@@ -100,6 +100,7 @@
             // 
             // button1
             // 
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.button1.Location = new System.Drawing.Point(684, 39);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 196);
@@ -448,7 +449,8 @@
             // 
             // MainScreen_ELiquidManagerButton
             // 
-            this.MainScreen_ELiquidManagerButton.Location = new System.Drawing.Point(12, 311);
+            this.MainScreen_ELiquidManagerButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.MainScreen_ELiquidManagerButton.Location = new System.Drawing.Point(12, 300);
             this.MainScreen_ELiquidManagerButton.Name = "MainScreen_ELiquidManagerButton";
             this.MainScreen_ELiquidManagerButton.Size = new System.Drawing.Size(289, 100);
             this.MainScreen_ELiquidManagerButton.TabIndex = 1;

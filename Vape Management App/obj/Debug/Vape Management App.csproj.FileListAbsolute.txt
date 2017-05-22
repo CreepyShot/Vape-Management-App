@@ -25,3 +25,4 @@ C:\Users\Creep\Desktop\Vape-Management-App\Vape Management App\obj\Debug\Vape Ma
 C:\Users\Creep\Desktop\Vape-Management-App\Vape Management App\bin\Debug\Vape Management App.exe.config
 C:\Users\Creep\Desktop\Vape-Management-App\Vape Management App\bin\Debug\Vape Management App.exe
 C:\Users\Creep\Desktop\Vape-Management-App\Vape Management App\bin\Debug\Vape Management App.pdb
+C:\Users\Creep\Desktop\Vape-Management-App\Vape Management App\obj\Debug\Vape_Management_App.ELiquidManager.resources

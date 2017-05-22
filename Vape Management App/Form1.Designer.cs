@@ -31,11 +31,19 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.NUMERIC_FLAVOR4 = new System.Windows.Forms.NumericUpDown();
+            this.NUMERIC_FLAVOR3 = new System.Windows.Forms.NumericUpDown();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.NUMERIC_FLAVOR2 = new System.Windows.Forms.NumericUpDown();
             this.NUMERIC_FLAVOR1 = new System.Windows.Forms.NumericUpDown();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.Label_Recipe_Flavor4 = new System.Windows.Forms.Label();
+            this.Label_Recipe_Flavor3 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.Label_Recipe_Flavor2 = new System.Windows.Forms.Label();
             this.Label_Recipe_Flavor1 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
@@ -66,16 +74,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.MainScreen_ELiquidManagerButton = new System.Windows.Forms.Button();
-            this.Label_Recipe_Flavor4 = new System.Windows.Forms.Label();
-            this.Label_Recipe_Flavor3 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.NUMERIC_FLAVOR4 = new System.Windows.Forms.NumericUpDown();
-            this.NUMERIC_FLAVOR3 = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_FLAVOR4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_FLAVOR3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_FLAVOR2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_FLAVOR1)).BeginInit();
             this.groupBox4.SuspendLayout();
@@ -86,8 +88,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_TARGET)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_BASE)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_FLAVOR4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_FLAVOR3)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -103,7 +103,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(790, 282);
+            this.groupBox1.Size = new System.Drawing.Size(748, 282);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "E-Liquid Calculator";
@@ -111,9 +111,9 @@
             // button1
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Location = new System.Drawing.Point(684, 39);
+            this.button1.Location = new System.Drawing.Point(654, 39);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 196);
+            this.button1.Size = new System.Drawing.Size(85, 237);
             this.button1.TabIndex = 8;
             this.button1.Text = "Calculate";
             this.button1.UseVisualStyleBackColor = true;
@@ -121,7 +121,6 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.AutoSize = true;
             this.groupBox5.Controls.Add(this.label19);
             this.groupBox5.Controls.Add(this.label20);
             this.groupBox5.Controls.Add(this.NUMERIC_FLAVOR4);
@@ -132,10 +131,44 @@
             this.groupBox5.Controls.Add(this.NUMERIC_FLAVOR1);
             this.groupBox5.Location = new System.Drawing.Point(21, 151);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(236, 134);
+            this.groupBox5.Size = new System.Drawing.Size(237, 125);
             this.groupBox5.TabIndex = 7;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Flavoring";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(66, 97);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(66, 13);
+            this.label19.TabIndex = 13;
+            this.label19.Text = "% Flavor 4";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(66, 71);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(66, 13);
+            this.label20.TabIndex = 12;
+            this.label20.Text = "% Flavor 3";
+            // 
+            // NUMERIC_FLAVOR4
+            // 
+            this.NUMERIC_FLAVOR4.DecimalPlaces = 1;
+            this.NUMERIC_FLAVOR4.Location = new System.Drawing.Point(9, 95);
+            this.NUMERIC_FLAVOR4.Name = "NUMERIC_FLAVOR4";
+            this.NUMERIC_FLAVOR4.Size = new System.Drawing.Size(51, 20);
+            this.NUMERIC_FLAVOR4.TabIndex = 11;
+            // 
+            // NUMERIC_FLAVOR3
+            // 
+            this.NUMERIC_FLAVOR3.DecimalPlaces = 1;
+            this.NUMERIC_FLAVOR3.Location = new System.Drawing.Point(9, 69);
+            this.NUMERIC_FLAVOR3.Name = "NUMERIC_FLAVOR3";
+            this.NUMERIC_FLAVOR3.Size = new System.Drawing.Size(51, 20);
+            this.NUMERIC_FLAVOR3.TabIndex = 10;
             // 
             // label16
             // 
@@ -197,6 +230,38 @@
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Recipe";
+            // 
+            // Label_Recipe_Flavor4
+            // 
+            this.Label_Recipe_Flavor4.Location = new System.Drawing.Point(103, 183);
+            this.Label_Recipe_Flavor4.Name = "Label_Recipe_Flavor4";
+            this.Label_Recipe_Flavor4.Size = new System.Drawing.Size(39, 14);
+            this.Label_Recipe_Flavor4.TabIndex = 26;
+            // 
+            // Label_Recipe_Flavor3
+            // 
+            this.Label_Recipe_Flavor3.Location = new System.Drawing.Point(103, 162);
+            this.Label_Recipe_Flavor3.Name = "Label_Recipe_Flavor3";
+            this.Label_Recipe_Flavor3.Size = new System.Drawing.Size(39, 14);
+            this.Label_Recipe_Flavor3.TabIndex = 25;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(18, 183);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(57, 13);
+            this.label21.TabIndex = 24;
+            this.label21.Text = "Flavor 4:";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(18, 162);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(57, 13);
+            this.label22.TabIndex = 23;
+            this.label22.Text = "Flavor 3:";
             // 
             // Label_Recipe_Flavor2
             // 
@@ -475,72 +540,6 @@
             this.MainScreen_ELiquidManagerButton.Text = "E-Liquid Manager";
             this.MainScreen_ELiquidManagerButton.UseVisualStyleBackColor = true;
             // 
-            // Label_Recipe_Flavor4
-            // 
-            this.Label_Recipe_Flavor4.Location = new System.Drawing.Point(103, 183);
-            this.Label_Recipe_Flavor4.Name = "Label_Recipe_Flavor4";
-            this.Label_Recipe_Flavor4.Size = new System.Drawing.Size(39, 14);
-            this.Label_Recipe_Flavor4.TabIndex = 26;
-            // 
-            // Label_Recipe_Flavor3
-            // 
-            this.Label_Recipe_Flavor3.Location = new System.Drawing.Point(103, 162);
-            this.Label_Recipe_Flavor3.Name = "Label_Recipe_Flavor3";
-            this.Label_Recipe_Flavor3.Size = new System.Drawing.Size(39, 14);
-            this.Label_Recipe_Flavor3.TabIndex = 25;
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(18, 183);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(57, 13);
-            this.label21.TabIndex = 24;
-            this.label21.Text = "Flavor 4:";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(18, 162);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(57, 13);
-            this.label22.TabIndex = 23;
-            this.label22.Text = "Flavor 3:";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(66, 97);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(66, 13);
-            this.label19.TabIndex = 13;
-            this.label19.Text = "% Flavor 4";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(66, 71);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(66, 13);
-            this.label20.TabIndex = 12;
-            this.label20.Text = "% Flavor 3";
-            // 
-            // NUMERIC_FLAVOR4
-            // 
-            this.NUMERIC_FLAVOR4.DecimalPlaces = 1;
-            this.NUMERIC_FLAVOR4.Location = new System.Drawing.Point(9, 95);
-            this.NUMERIC_FLAVOR4.Name = "NUMERIC_FLAVOR4";
-            this.NUMERIC_FLAVOR4.Size = new System.Drawing.Size(51, 20);
-            this.NUMERIC_FLAVOR4.TabIndex = 11;
-            // 
-            // NUMERIC_FLAVOR3
-            // 
-            this.NUMERIC_FLAVOR3.DecimalPlaces = 1;
-            this.NUMERIC_FLAVOR3.Location = new System.Drawing.Point(9, 69);
-            this.NUMERIC_FLAVOR3.Name = "NUMERIC_FLAVOR3";
-            this.NUMERIC_FLAVOR3.Size = new System.Drawing.Size(51, 20);
-            this.NUMERIC_FLAVOR3.TabIndex = 10;
-            // 
             // Main_Screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -554,6 +553,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_FLAVOR4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_FLAVOR3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_FLAVOR2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_FLAVOR1)).EndInit();
             this.groupBox4.ResumeLayout(false);
@@ -567,8 +568,6 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_BASE)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_FLAVOR4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_FLAVOR3)).EndInit();
             this.ResumeLayout(false);
 
         }

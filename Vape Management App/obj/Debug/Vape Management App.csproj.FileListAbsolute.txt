@@ -16,3 +16,12 @@ C:\Users\Daniel\Desktop\Vape Management App\Vape Management App\bin\Debug\Entity
 C:\Users\Daniel\Desktop\Vape Management App\Vape Management App\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Daniel\Desktop\Vape Management App\Vape Management App\bin\Debug\System.Data.SQLite.xml
 C:\Users\Daniel\Desktop\Vape Management App\Vape Management App\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\Creep\Desktop\Vape-Management-App\Vape Management App\obj\Debug\Vape Management App.csprojResolveAssemblyReference.cache
+C:\Users\Creep\Desktop\Vape-Management-App\Vape Management App\obj\Debug\Vape_Management_App.Main_Screen.resources
+C:\Users\Creep\Desktop\Vape-Management-App\Vape Management App\obj\Debug\Vape_Management_App.Properties.Resources.resources
+C:\Users\Creep\Desktop\Vape-Management-App\Vape Management App\obj\Debug\Vape Management App.csproj.GenerateResource.Cache
+C:\Users\Creep\Desktop\Vape-Management-App\Vape Management App\obj\Debug\Vape Management App.exe
+C:\Users\Creep\Desktop\Vape-Management-App\Vape Management App\obj\Debug\Vape Management App.pdb
+C:\Users\Creep\Desktop\Vape-Management-App\Vape Management App\bin\Debug\Vape Management App.exe.config
+C:\Users\Creep\Desktop\Vape-Management-App\Vape Management App\bin\Debug\Vape Management App.exe
+C:\Users\Creep\Desktop\Vape-Management-App\Vape Management App\bin\Debug\Vape Management App.pdb

@@ -66,6 +66,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.MainScreen_ELiquidManagerButton = new System.Windows.Forms.Button();
+            this.Label_Recipe_Flavor4 = new System.Windows.Forms.Label();
+            this.Label_Recipe_Flavor3 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.NUMERIC_FLAVOR4 = new System.Windows.Forms.NumericUpDown();
+            this.NUMERIC_FLAVOR3 = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_FLAVOR2)).BeginInit();
@@ -78,6 +86,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_TARGET)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_BASE)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_FLAVOR4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_FLAVOR3)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -112,13 +122,17 @@
             // groupBox5
             // 
             this.groupBox5.AutoSize = true;
+            this.groupBox5.Controls.Add(this.label19);
+            this.groupBox5.Controls.Add(this.label20);
+            this.groupBox5.Controls.Add(this.NUMERIC_FLAVOR4);
+            this.groupBox5.Controls.Add(this.NUMERIC_FLAVOR3);
             this.groupBox5.Controls.Add(this.label16);
             this.groupBox5.Controls.Add(this.label15);
             this.groupBox5.Controls.Add(this.NUMERIC_FLAVOR2);
             this.groupBox5.Controls.Add(this.NUMERIC_FLAVOR1);
             this.groupBox5.Location = new System.Drawing.Point(21, 151);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(236, 84);
+            this.groupBox5.Size = new System.Drawing.Size(236, 134);
             this.groupBox5.TabIndex = 7;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Flavoring";
@@ -159,6 +173,10 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.Label_Recipe_Flavor4);
+            this.groupBox4.Controls.Add(this.Label_Recipe_Flavor3);
+            this.groupBox4.Controls.Add(this.label21);
+            this.groupBox4.Controls.Add(this.label22);
             this.groupBox4.Controls.Add(this.Label_Recipe_Flavor2);
             this.groupBox4.Controls.Add(this.Label_Recipe_Flavor1);
             this.groupBox4.Controls.Add(this.label18);
@@ -175,21 +193,21 @@
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.Location = new System.Drawing.Point(489, 39);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(159, 198);
+            this.groupBox4.Size = new System.Drawing.Size(159, 237);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Recipe";
             // 
             // Label_Recipe_Flavor2
             // 
-            this.Label_Recipe_Flavor2.Location = new System.Drawing.Point(103, 140);
+            this.Label_Recipe_Flavor2.Location = new System.Drawing.Point(103, 143);
             this.Label_Recipe_Flavor2.Name = "Label_Recipe_Flavor2";
             this.Label_Recipe_Flavor2.Size = new System.Drawing.Size(39, 14);
             this.Label_Recipe_Flavor2.TabIndex = 22;
             // 
             // Label_Recipe_Flavor1
             // 
-            this.Label_Recipe_Flavor1.Location = new System.Drawing.Point(103, 119);
+            this.Label_Recipe_Flavor1.Location = new System.Drawing.Point(103, 122);
             this.Label_Recipe_Flavor1.Name = "Label_Recipe_Flavor1";
             this.Label_Recipe_Flavor1.Size = new System.Drawing.Size(39, 14);
             this.Label_Recipe_Flavor1.TabIndex = 21;
@@ -197,7 +215,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(18, 140);
+            this.label18.Location = new System.Drawing.Point(18, 143);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(57, 13);
             this.label18.TabIndex = 20;
@@ -206,7 +224,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(18, 119);
+            this.label17.Location = new System.Drawing.Point(18, 122);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(57, 13);
             this.label17.TabIndex = 19;
@@ -228,7 +246,7 @@
             // 
             // Label_Recipe_Total
             // 
-            this.Label_Recipe_Total.Location = new System.Drawing.Point(103, 166);
+            this.Label_Recipe_Total.Location = new System.Drawing.Point(92, 207);
             this.Label_Recipe_Total.Name = "Label_Recipe_Total";
             this.Label_Recipe_Total.Size = new System.Drawing.Size(39, 13);
             this.Label_Recipe_Total.TabIndex = 16;
@@ -243,7 +261,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(18, 166);
+            this.label14.Location = new System.Drawing.Point(7, 207);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(40, 13);
             this.label14.TabIndex = 12;
@@ -317,7 +335,7 @@
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Location = new System.Drawing.Point(279, 78);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(204, 159);
+            this.groupBox3.Size = new System.Drawing.Size(204, 198);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Target Liquid";
@@ -457,6 +475,72 @@
             this.MainScreen_ELiquidManagerButton.Text = "E-Liquid Manager";
             this.MainScreen_ELiquidManagerButton.UseVisualStyleBackColor = true;
             // 
+            // Label_Recipe_Flavor4
+            // 
+            this.Label_Recipe_Flavor4.Location = new System.Drawing.Point(103, 183);
+            this.Label_Recipe_Flavor4.Name = "Label_Recipe_Flavor4";
+            this.Label_Recipe_Flavor4.Size = new System.Drawing.Size(39, 14);
+            this.Label_Recipe_Flavor4.TabIndex = 26;
+            // 
+            // Label_Recipe_Flavor3
+            // 
+            this.Label_Recipe_Flavor3.Location = new System.Drawing.Point(103, 162);
+            this.Label_Recipe_Flavor3.Name = "Label_Recipe_Flavor3";
+            this.Label_Recipe_Flavor3.Size = new System.Drawing.Size(39, 14);
+            this.Label_Recipe_Flavor3.TabIndex = 25;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(18, 183);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(57, 13);
+            this.label21.TabIndex = 24;
+            this.label21.Text = "Flavor 4:";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(18, 162);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(57, 13);
+            this.label22.TabIndex = 23;
+            this.label22.Text = "Flavor 3:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(66, 97);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(66, 13);
+            this.label19.TabIndex = 13;
+            this.label19.Text = "% Flavor 4";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(66, 71);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(66, 13);
+            this.label20.TabIndex = 12;
+            this.label20.Text = "% Flavor 3";
+            // 
+            // NUMERIC_FLAVOR4
+            // 
+            this.NUMERIC_FLAVOR4.DecimalPlaces = 1;
+            this.NUMERIC_FLAVOR4.Location = new System.Drawing.Point(9, 95);
+            this.NUMERIC_FLAVOR4.Name = "NUMERIC_FLAVOR4";
+            this.NUMERIC_FLAVOR4.Size = new System.Drawing.Size(51, 20);
+            this.NUMERIC_FLAVOR4.TabIndex = 11;
+            // 
+            // NUMERIC_FLAVOR3
+            // 
+            this.NUMERIC_FLAVOR3.DecimalPlaces = 1;
+            this.NUMERIC_FLAVOR3.Location = new System.Drawing.Point(9, 69);
+            this.NUMERIC_FLAVOR3.Name = "NUMERIC_FLAVOR3";
+            this.NUMERIC_FLAVOR3.Size = new System.Drawing.Size(51, 20);
+            this.NUMERIC_FLAVOR3.TabIndex = 10;
+            // 
             // Main_Screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -483,6 +567,8 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_BASE)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_FLAVOR4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_FLAVOR3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -527,6 +613,14 @@
         private System.Windows.Forms.Label Label_Recipe_PG;
         private System.Windows.Forms.Label Label_Recipe_VG;
         private System.Windows.Forms.Button MainScreen_ELiquidManagerButton;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.NumericUpDown NUMERIC_FLAVOR4;
+        private System.Windows.Forms.NumericUpDown NUMERIC_FLAVOR3;
+        private System.Windows.Forms.Label Label_Recipe_Flavor4;
+        private System.Windows.Forms.Label Label_Recipe_Flavor3;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label22;
     }
 }
 

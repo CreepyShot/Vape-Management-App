@@ -18,7 +18,7 @@ namespace Vape_Management_App
         }
 
 
-        decimal nicbase, vgbase, pgbase, flavoring, totalrecipe,flavor1base, flavor2base;
+        decimal nicbase, vgbase, pgbase, flavoring, totalrecipe,flavor1base, flavor2base, flavor3base, flavor4base;
 
         private void NUMERIC_PG_ValueChanged(object sender, EventArgs e)
         {
@@ -36,8 +36,10 @@ namespace Vape_Management_App
             pgbase = NUMERIC_BATCH.Value * (NUMERIC_PG.Value / 100);
             flavor1base = NUMERIC_BATCH.Value * (NUMERIC_FLAVOR1.Value / 100);
             flavor2base = NUMERIC_BATCH.Value * (NUMERIC_FLAVOR2.Value / 100);
-            pgbase = pgbase - flavor1base - flavor2base - nicbase;
-            totalrecipe = vgbase + pgbase + flavor1base + flavor2base + nicbase;
+            flavor3base = NUMERIC_BATCH.Value * (NUMERIC_FLAVOR3.Value / 100);
+            flavor4base = NUMERIC_BATCH.Value * (NUMERIC_FLAVOR4.Value / 100);
+            pgbase = pgbase - flavor1base - flavor2base - flavor3base - flavor4base - nicbase;
+            totalrecipe = vgbase + pgbase + flavor1base + flavor2base + flavor3base + flavor4base + nicbase;
             if (NUMERIC_BASE.Value != 0)
             {
                 nicbase = NUMERIC_BATCH.Value / NUMERIC_BASE.Value * NUMERIC_TARGET.Value;
@@ -53,6 +55,8 @@ namespace Vape_Management_App
             Label_Recipe_Flavor2.Text = flavor2base.ToString();
             Label_Recipe_PG.Text = pgbase.ToString();
             Label_Recipe_Flavor1.Text = flavor1base.ToString();
+            Label_Recipe_Flavor3.Text = flavor3base.ToString();
+            Label_Recipe_Flavor4.Text = flavor4base.ToString();
 
 
         }

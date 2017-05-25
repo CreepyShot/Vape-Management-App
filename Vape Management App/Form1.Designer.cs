@@ -539,6 +539,7 @@
             this.MainScreen_ELiquidManagerButton.TabIndex = 1;
             this.MainScreen_ELiquidManagerButton.Text = "E-Liquid Manager";
             this.MainScreen_ELiquidManagerButton.UseVisualStyleBackColor = true;
+            this.MainScreen_ELiquidManagerButton.Click += new System.EventHandler(this.MainScreen_ELiquidManagerButton_Click);
             // 
             // Main_Screen
             // 

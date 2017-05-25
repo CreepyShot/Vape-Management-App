@@ -17,12 +17,12 @@ namespace Vape_Management_App
         {
             InitializeComponent();
         }
-        string filePath = @"C:\Users\Creep\Desktop\Vape-Management-App\Vape Management App\ELiquidManagerDatabase.txt";
+        string path = @"C:\Users\Creep\Desktop\Vape-Management-App\Vape Management App\ELiquidManagerDatabase.txt";
 
-        List<string> lines = File.ReadAllLines(filePath).ToList();
-        foreach(string line in lines)
+
+        private void button1_Click(object sender, EventArgs e)
         {
-            
-
+            textBox1.Text = File.ReadAllText(path);
+        }
     }
 }

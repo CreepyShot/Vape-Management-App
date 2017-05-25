@@ -1,2 +1,2 @@
-﻿heisenberg,30ml,0mg;
+﻿heisenberg,30ml,15mg;
 red astaire,20ml,1mg;

@@ -20,6 +20,13 @@ namespace Vape_Management_App
 
         decimal nicbase, vgbase, pgbase, flavoring, totalrecipe,flavor1base, flavor2base, flavor3base, flavor4base;
 
+        private void MainScreen_ELiquidManagerButton_Click(object sender, EventArgs e)
+        {
+            ELiquidManager f2 = new ELiquidManager();
+            f2.ShowDialog();
+
+        }
+
         private void NUMERIC_PG_ValueChanged(object sender, EventArgs e)
         {
             NUMERIC_VG.Value = 100 - NUMERIC_PG.Value;

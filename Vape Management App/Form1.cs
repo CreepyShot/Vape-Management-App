@@ -38,6 +38,7 @@ namespace Vape_Management_App
                 newLiquid.vgpg = entries[3];
                 newLiquid.nicotine = entries[4];
                 textBox1.Text = newLiquid.name;
+
                 
             }
         }
@@ -68,9 +69,8 @@ namespace Vape_Management_App
             }
             if (NUMERIC_BATCH.Value != totalrecipe)
             {
-                MessageBox.Show("Error, this liquid is not do-able");
+                MessageBox.Show("Error, this liquid is not doable");
             }
-            // Print Values Onto Labels
             Label_Recipe_Nic.Text = nicbase.ToString();
             Label_Recipe_VG.Text = vgbase.ToString();
             Label_Recipe_Total.Text = totalrecipe.ToString();

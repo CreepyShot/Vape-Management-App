@@ -1,2 +1,2 @@
-﻿heisenberg,30ml,15mg;
-red astaire,20ml,1mg;
+﻿vampire vapes,heisenberg,30,70/30,15;
+unknown,red astaire,20,70/30,1;

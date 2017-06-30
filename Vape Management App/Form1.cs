@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Vape_Management_App
 {
@@ -18,13 +19,27 @@ namespace Vape_Management_App
         }
 
 
-        decimal nicbase, vgbase, pgbase, flavoring, totalrecipe,flavor1base, flavor2base, flavor3base, flavor4base;
+        decimal nicbase, vgbase, pgbase, totalrecipe,flavor1base, flavor2base, flavor3base, flavor4base;
+        int i;
 
-        private void MainScreen_ELiquidManagerButton_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            ELiquidManager f2 = new ELiquidManager();
-            f2.ShowDialog();
+            textBox1.Text = "";
+            string filePath = @"C:\Users\Creep\Desktop\Vape-Management-App\Vape Management App\ELiquidManagerDatabase.txt";
+            List<string> lines = File.ReadAllLines(filePath).ToList();
+            foreach (string line in lines)
+            {
+                string[] entries = line.Split(',');
 
+                Liquids newLiquid = new Liquids();
+                newLiquid.brand = entries[0];
+                newLiquid.name = entries[1];
+                newLiquid.amount = entries[2];
+                newLiquid.vgpg = entries[3];
+                newLiquid.nicotine = entries[4];
+                textBox1.Text = newLiquid.name;
+                
+            }
         }
 
         private void NUMERIC_PG_ValueChanged(object sender, EventArgs e)

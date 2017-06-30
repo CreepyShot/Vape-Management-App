@@ -73,7 +73,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.MainScreen_ELiquidManagerButton = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_FLAVOR4)).BeginInit();
@@ -110,7 +111,7 @@
             // 
             // button1
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Location = new System.Drawing.Point(654, 39);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(85, 237);
@@ -530,23 +531,33 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Amount of liquid you want to make:";
             // 
-            // MainScreen_ELiquidManagerButton
+            // textBox1
             // 
-            this.MainScreen_ELiquidManagerButton.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.MainScreen_ELiquidManagerButton.Location = new System.Drawing.Point(12, 300);
-            this.MainScreen_ELiquidManagerButton.Name = "MainScreen_ELiquidManagerButton";
-            this.MainScreen_ELiquidManagerButton.Size = new System.Drawing.Size(289, 100);
-            this.MainScreen_ELiquidManagerButton.TabIndex = 1;
-            this.MainScreen_ELiquidManagerButton.Text = "E-Liquid Manager";
-            this.MainScreen_ELiquidManagerButton.UseVisualStyleBackColor = true;
-            this.MainScreen_ELiquidManagerButton.Click += new System.EventHandler(this.MainScreen_ELiquidManagerButton_Click);
+            this.textBox1.Location = new System.Drawing.Point(51, 337);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(709, 119);
+            this.textBox1.TabIndex = 1;
+            // 
+            // button2
+            // 
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(685, 462);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "↺";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Main_Screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1179, 670);
-            this.Controls.Add(this.MainScreen_ELiquidManagerButton);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.groupBox1);
             this.Name = "Main_Screen";
             this.Text = "Vape Management ";
@@ -570,6 +581,7 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NUMERIC_BASE)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -612,7 +624,6 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label Label_Recipe_PG;
         private System.Windows.Forms.Label Label_Recipe_VG;
-        private System.Windows.Forms.Button MainScreen_ELiquidManagerButton;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.NumericUpDown NUMERIC_FLAVOR4;
@@ -621,6 +632,8 @@
         private System.Windows.Forms.Label Label_Recipe_Flavor3;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button2;
     }
 }
 
